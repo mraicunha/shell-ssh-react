@@ -1,38 +1,124 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  min-height: 100%;
+}
+
+body {
+  background-color: #E8E6E8;
+}
+
+body, input, button {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+/* TERMINAL SHELL STYLES */
+
+#shell {
+  height: 90vh;
+  width: 100%;
+}
+
+.terminal pre {
+  font-family: 'Ubuntu Mono';
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.terminal .top {
+  background: #E8E6E8;
+  color: black;
+  padding: 5px;
+  border-radius: 5px 5px 0 0;
+}
+
+.terminal .btns {
+  position: absolute;
+  top: 7px;
+  left: 5px;
+}
+
+.terminal .circle {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border-radius: 15px;
+  margin-left: 2px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.title {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.red {
+  background: #EC6A5F;
+  border-color: #D04E42;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.green {
+  background: #64CC57;
+  border-color: #4EA73B;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.yellow {
+  background: #F5C04F;
+  border-color: #D6A13D;
 }
 
-.App-link {
-  color: #61dafb;
+.clear {
+  clear: both;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.terminal, .body {
+  background: black;
+  /* color: #7AFB4C; */
+  color: #fff;
+  overflow: auto;
+}
+
+.space {
+  margin: 25px;
+}
+
+.shadow {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .4)
+}
+
+.line {
+  display: table;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.line>input {
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.terminal span {
+  display: table-cell;
+  width: 1px;
+}
+
+.terminal input {
+  display: table-cell;
+  width: 100%;
+  border: none;
+  background: black;
+  color: #fff;
+  outline: none;
+}
+
+.terminal {
+  border-radius: 5px 5px 0 0;
+  position: relative;
 }
